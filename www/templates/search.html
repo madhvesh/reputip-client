@@ -1,0 +1,52 @@
+<ion-view view-title="RepuTip" ng-controller="MerchantInfoCtrl as vm">
+   <header class="bar bar-header bar-positive">
+      <h1 class="title">Search</h1>
+        <div class="buttons">
+             <a class="button button-energized" ng-href="#/home/maps">
+              <i class="icon ion-ios-location">Map</i>
+             </a>
+        </div>
+    </header>
+  <ion-content class="has-header">
+
+    <!--
+    <h1 class="title">Visa Hackathon - Search</h1>
+    -->
+    <div class="list">
+      <div>
+      <a href="#/home/search/{{merchant.id}}" class="item item-divider item-icon-left"  ng-repeat="merchant in vm.merchantInfo"
+         >
+         <!--ng-click="vm.selectMerchant(merchant.id)"> -->
+            
+               <div class="row">
+                 <div class="col">
+                   <i class="icon ion-android-restaurant icon-ac"></i> 
+                   <h2 class="standout">Merchant Name:  {{merchant.name}}  </h2>
+                 </div>
+               </div>
+
+               <div class="row">
+                  <div class="col col-40 ion-ios-star item-icon-right">
+                   </div>
+                    <div class="col col-center">
+                       <h4> Rating : {{merchant.totalRating}}</h4>
+                    </div>
+                    <div class="col ion-ios-star item-icon-left">
+                   </div>
+                   <div class="col col-center"> 
+                    <h3>{{merchant.numoftxns}}</h3>
+                  </div>
+               </div>
+               <div class="row">
+                   <div class="col">
+                      <p> <h4 class="positive"> {{merchant.street}}, {{merchant.city}} {{merchant.state}}</h4> </p>
+                   </div>
+               </div>
+          
+      </a>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>
+
+

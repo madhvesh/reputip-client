@@ -1,0 +1,17 @@
+<ion-view view-title="RepuTip" ng-controller="LocationMapCtrl as vm">
+   <header class="bar bar-header bar-balanced">
+      <h1 class="title">RepuTip - Maps</h1>
+   </header>
+   <ion-content class="has-header">
+
+     <!--
+     <google-map draggable="true" center="vm.map.center" zoom="vm.map.zoom">
+     </google-map>
+     -->
+
+     <ui-gmap-google-map draggable="true" center='vm.map.center' zoom='vm.map.zoom'>
+     </ui-gmap-google-map>
+   
+   </ion-content>
+
+</ion-view>

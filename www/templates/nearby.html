@@ -1,0 +1,26 @@
+<ion-view view-title="Nearby" ng-controller="NearbyInfoCtrl as vm">
+   <header class="bar bar-header bar-positive">
+      <h1 class="title">Nearby</h1>
+    </header>
+  <ion-content class="has-header">
+   
+    <ion-list>
+    <div class="list" item-icon-left>
+      <ion-item  ng-repeat="category in vm.nearbyInfo"  ng-click="vm.selectCategory(category.title)">
+       <i class="icon {{category.icon}} icon-ac"></i>
+         {{category.title}}
+      </ion-item>
+    </div>
+      
+       <div class="row">
+                    <div item-icon-left class="col col-left">
+                     <i class="icon ion-arrow-graph-up-left icon-ac"></i> 
+                       Trending: <h5>Nubi Yogurt * * * </h5>
+                  </div>
+                 
+                    <img src="templates/nubi.jpeg">
+                 
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
